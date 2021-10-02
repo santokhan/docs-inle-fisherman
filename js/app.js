@@ -1,19 +1,6 @@
-/**Dom Selection */
-const navBtn = document.getElementById("elementId");
-
-
-/**Function Call Automatically*/
-(function () {
-
-})();
-
-/**Normal Function */
-function myFunc() {
-
+function copy(e) {
+    navigator.clipboard.writeText("#add8e6");
+    e.title = "Color code copied";
+    alert("Copied Color Code: #add8e6")
 }
-
-/**Arrow Function */
-var arrowFunc = (e) => {
-    /**Your code here */
-    return e;
-}
+document.querySelector("#lightBlue").addEventListener("click", copy);
